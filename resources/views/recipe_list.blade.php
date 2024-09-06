@@ -3,7 +3,26 @@
 @section('title')
 レシピ一覧
 @php
-   $color = App\Consts\RecipeConst::TYPE_COLOR;
+   $ingredient_type = [
+    1 => 'お菓子',
+    2 => 'パン',
+    3 => 'サラダ',
+    4 => '魚介類',
+    5 => '肉料理',
+    6 => 'ご飯',
+    7 => '麺類',
+    8 => 'スープ',
+];
+$color  = [
+    1 => ['お菓子','pink' ],
+    2 => ['パン','orange' ],
+    3 => ['サラダ','green' ],
+    4 => ['魚介類','skyblue' ],
+    5 => ['肉料理','brown' ],
+    6 => ['ご飯','lightyellow' ],
+    7 => ['麺類','lightyellow' ],
+    8 => ['スープ','lightgreen' ],
+];
 @endphp
 
 @endsection
@@ -18,7 +37,7 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="addon-wrapping">カテゴリー</span>
         </div>
-        {{Form::select('type',App\Consts\RecipeConst::INGREDIENT_TYPE,$request->type,['class'=>'form-control','placeholder'=>'選択してください'])}};
+        {{Form::select('type', $ingredient_type,$request->type,['class'=>'form-control','placeholder'=>'選択してください'])}};
       </div>
       <div class="input-group flex-nowrap">
         <div class="input-group-prepend">

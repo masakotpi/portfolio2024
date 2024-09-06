@@ -89,7 +89,7 @@ class OrderUsecase
      * PDF発注書発行
      *                  
      */
-    public function issuePo(object $request):DomPDFPDF
+    public function issuePo(object $request)
     {
         if(empty($request['order_ids'])){
             throw new Exception('ご注文を選択してください');

@@ -1,6 +1,5 @@
 <?php
-
-namespace App\Consts;
+namespace app\Consts;
 
 // usersで使う定数
 class RecipeConst

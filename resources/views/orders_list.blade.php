@@ -13,7 +13,7 @@
 {{Form::open(['method' => 'post','id' => 'update_shipping', 'class' => 'text-right'])}}
   <button type="submit" id="update_shipping" formmethod="post" class="btn-sm btn-primary" 
   formaction="{{route('order_update_shippings')}}" title="入荷予定を動かして更新をしてください">入荷予定日更新</button>
-{{form::close()}}
+{{Form::close()}}
 
 
 
