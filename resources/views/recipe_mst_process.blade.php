@@ -4,11 +4,22 @@
 工程マスタ更新
 
 @endsection
-
+@php
+$INGREDIENT_TYPE = [
+    1 => 'お菓子',
+    2 => 'パン',
+    3 => 'サラダ',
+    4 => '魚介類',
+    5 => '肉料理',
+    6 => 'ご飯',
+    7 => '麺類',
+    8 => 'スープ',
+];
+@endphp
 
 
 @section('content')
-@foreach(App\Consts\RecipeConst::INGREDIENT_TYPE as $index => $mst_process)
+@foreach($INGREDIENT_TYPE as $index => $mst_process)
 {{Form::open(['method' => 'get','id' => 'getindex'.$index, 'class'=>"d-inline"])}}
   {{Form::hidden('type',$index,['form'=>'getindex'.$index])}}
   @if($type == $index)

@@ -3,7 +3,16 @@
 @section('title')
 レシピ詳細
 @php
-   $color = App\Consts\RecipeConst::TYPE_COLOR;
+   $color = [
+    1 => ['お菓子','pink' ],
+    2 => ['パン','orange' ],
+    3 => ['サラダ','green' ],
+    4 => ['魚介類','skyblue' ],
+    5 => ['肉料理','brown' ],
+    6 => ['ご飯','lightyellow' ],
+    7 => ['麺類','lightyellow' ],
+    8 => ['スープ','lightgreen' ],
+];
 @endphp
 
 @endsection
