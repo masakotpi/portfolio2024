@@ -244,7 +244,7 @@
                                     <br>・PDFで発注書発行                                  
 
                                     <div class="text-center  mt-5">
-                                        PHP Laravel in March 2022
+                                        PHP Laravel in March 2024
                                     </div>
                                
                                 </div>
@@ -274,7 +274,7 @@
                                         <br>・クリック一つでレシピ作成。                                 
 
                                     <div class="text-center mt-5">
-                                    PHP Laravel in August 2022
+                                    PHP Laravel in August 2024
                                     </div>
                             </div>
                         </div>
