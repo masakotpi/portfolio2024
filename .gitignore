@@ -16,4 +16,4 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-app/Models/IgnoreTest.php
+ignore.md
